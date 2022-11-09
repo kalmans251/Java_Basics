@@ -54,7 +54,18 @@ public class PrimaryDataType1 {
 				//
 		float value9 = 1.123456789F;
 		System.out.println(value9);
+		
+		double value10 = 1.12345678910111213;
+		System.out.println(value10);
+		
 		//4. 문자 (char) : 영문/한글/일본어 ..  한 글자
+		// 변수의 값을 할당할 리터럴에 ''
+		char value11 = 'A';
+		char value12 = 'a';
+		char value13 = '가';
+		char value14 = '3';
+		
+		
 		
 		//5. 문자열 (string) : 여러 글자
 		
