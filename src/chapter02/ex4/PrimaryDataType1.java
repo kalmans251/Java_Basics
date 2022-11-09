@@ -65,7 +65,10 @@ public class PrimaryDataType1 {
 		char value13 = '가';
 		char value14 = '3';
 		
-		
+		System.out.println(value11);
+		System.out.println(value12);
+		System.out.println(value13);
+		System.out.println(value14);
 		
 		//5. 문자열 (string) : 여러 글자
 		
