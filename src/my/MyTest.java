@@ -4,7 +4,7 @@ import java.math.*;
 public class MyTest {
 	double i,j,k;
 	MyTest(){}
-	MyTest(double i,double j, double k) {
+	MyTest(d,double j, double k) {
 		this.i=i;
 		this.j=j;
 		this.k=k;
