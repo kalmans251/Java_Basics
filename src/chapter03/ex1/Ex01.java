@@ -14,8 +14,8 @@ public class Ex01 {
 		Scanner Sc = new Scanner(System.in);
 		int a;
 		int b;
-		String aName = new String();
-		String bName = new String();
+		String aName;
+		String bName;
 		
 		System.out.print("숫자비교 첫번째 수 입력. = ");
 		a = Sc.nextInt();
