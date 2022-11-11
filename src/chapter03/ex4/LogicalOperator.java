@@ -61,14 +61,34 @@ public class LogicalOperator {
 		System.out.println(false && true );
 		
 		// AND 연산자에서는 처음 값이 false면 뒤에 어떤값이 오더라도 결과는 false로 지정되며 이를 쇼트서킷이라 한다.
-		System.out.println( "===================" );
+		System.out.println( "======AND 연산에서 쇼트서킷 발생 및 방지=============" );
 		int value1 = 3;
 		System.out.println(false && ++value1 > 6); //쇼트서킷 발생 o
-		System.out.println(value1);
+		System.out.println(value1);					// 논리연산자.
 		
 		int value2 = 3;
 		System.out.println(false & ++value2 > 6); //쇼트서킷 발생 x
-		System.out.println(value2);
+		System.out.println(value2);					// 비트연산자.
+		
+		
+		System.out.println( "======OR 연산에서 쇼트서킷 발생 및 방지=============" );
+		int value3 = 3;
+		System.out.println(false || ++value3 > 6); //쇼트서킷 발생 o
+		System.out.println(value3);					// 논리연산자.
+		
+		int value4 = 3;
+		System.out.println(false | ++value4 > 6); //쇼트서킷 발생 x
+		System.out.println(value4);					// 비트연산자.		
+		
+		// XOR ( ^ ) : 논리연산, 비트연산 <== 뒤의 값을 반드시 확인. [쇼트서킷발생x]
+		
+		  
+		
+		
+		
+		
+		
+		
 	}
 
 }
