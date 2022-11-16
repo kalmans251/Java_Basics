@@ -32,9 +32,17 @@ public class Ex02 {
 				for(int id = 0 ; id < arr1[i].length ; id++ ) {
 					arr1[i][id] = (1+id)*5;
 				}
+				//=============================================================//
 			}else if(i==2) {
 				System.out.println("3의 배수와 8의배수 저장");
-				for(int id = 0,k=0 ; id < arr1[i].length ; id++ ) {
+				for(int id = 0, k=1 ; id < arr1[i].length ; id++,k++ ) {
+					if(k%3==0 || k%8==0) {
+						arr1[i][id] = k;
+						continue;
+					}
+					id--;
+				}
+				/*for(int id = 0,k=0 ; id < arr1[i].length ; id++ ) {
 					while(true) {
 						k++;
 						if( k%3==0 || k%8==0 ) {
@@ -42,7 +50,8 @@ public class Ex02 {
 							break;
 						}
 					}
-				}
+				}*/
+				//=============================================================//
 			}else if(i==3){
 				System.out.println("1부터 시작해 1씩증가 하는데 7의 배수는 제외");
 				for(int id = 0,k=1 ; id < arr1[i].length ; id++ ) {
@@ -60,7 +69,7 @@ public class Ex02 {
 				}
 			}
 		}
-		System.out.println("===========================1,For문으로 출력,==================================");
+		System.out.println("=====================================1,For문으로 출력,============================================");
 		
 		for( int i = 0 ; i < arr1.length ; i++) {
 			for( int j = 0 ; j < arr1[i].length ; j++) {
@@ -70,7 +79,7 @@ public class Ex02 {
 		}
 		System.out.println();
 		System.out.println();
-		System.out.println("===========================1,Enhanced For문으로 출력,==================================");
+		System.out.println("=====================================1,Enhanced For문으로 출력,============================================");
 		
 		for( int[] arr2 : arr1) {
 			for(int arr3 : arr2) {
@@ -80,7 +89,7 @@ public class Ex02 {
 		}
 		System.out.println();
 		System.out.println();
-		System.out.println("===========================1,Arrays.toString() 문으로 출력,==================================");
+		System.out.println("=====================================1,Arrays.toString() 문으로 출력,============================================");
 		
 		for(int[] k : arr1) {
 			System.out.println(Arrays.toString(k) );
