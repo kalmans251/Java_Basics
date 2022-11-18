@@ -25,6 +25,7 @@ public class Ex01 {
 		<평균>
 		 */
 		String[][] arrs = new String[4][5];
+		double[][] sum_avr = new double[2][4]; 
 		int[] sum = new int[4];
 		double[] avr = new double[4]; 
 		
@@ -39,8 +40,14 @@ public class Ex01 {
 			for(int j = 0 ; j < sum.length ; j++ ) {
 				avr[i] = (sum[i]/4.0);
 			}
-			
-			
+		}
+		for(int i = 0 ; i < sum_avr.length-1 ; i++ ) {
+			for(int j = 0 ; j < sum_avr[i].length ; j++ ) {
+				for(int k = 0 ; k < arrs.length ; k++ ) {
+					sum_avr[i][j] += Double.parseDouble(arrs[k][j+1]);
+				}
+				sum_avr[1][j] = sum_avr[0][j]/4;
+			}
 		}
 		System.out.printf("<출력>\n");
 		System.out.printf("          국어     영어     수학     과학      <합계>    <평균>\n");  //11 ,  7 , 7 , 7
@@ -54,13 +61,26 @@ public class Ex01 {
 			System.out.printf("%10.2f\n",avr[i]);
 		}
 		System.out.print("=====================================================================\n");
-		System.out.printf("<합계> = %d\n",sum[0]+sum[1]+sum[2]+sum[3]);
-		System.out.printf("<평균> = %.2f",((avr[0]+avr[1]+avr[2]+avr[3])/4.));
-		
-		
-		
-		
-
+		System.out.print("합계치");
+		for(int i = 0 ; i < sum_avr.length ; i++ ) {
+			for(int j = 0 ; j < sum_avr[i].length ; j++ ) {
+				if(i==0) {
+					System.out.printf("%8.0f",sum_avr[i][j]);
+				}else {
+					System.out.printf("%8.2f",sum_avr[i][j]);
+				}
+			}
+			if(i==0) {
+				System.out.printf("%10d",(sum[0]+sum[1]+sum[2]+sum[3]));
+			}else {
+				System.out.printf("%20.2f",(avr[0]+avr[1]+avr[2]+avr[3])/4);
+			}
+			System.out.println();
+			if( i==(sum_avr.length-1) ) {
+				continue;
+			}
+			System.out.print("평균치");
+		}
+		System.out.println("=====================================================================");
 	}
-
 }
