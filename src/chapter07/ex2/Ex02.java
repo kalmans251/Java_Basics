@@ -12,11 +12,14 @@ public class Ex02 {
 		// 배열 a : 4의 배수를 1부터 ~ 300까지
 		// 배열 b : 5의 배수를 1부터 ~ 300까지
 		
+		
 		int[] arr1 = MultiArray(300, 4);
 		int[] arr2 = MultiArray(300, 5);
 		
 		int[] addAr = addArray(arr1,arr2);
 		System.out.println(Arrays.toString(addAr));
+		
+		
 		
 		// 두 배열의 각 방의 값을 더해서 출력.
 	}
