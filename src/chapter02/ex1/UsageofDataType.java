@@ -1,8 +1,13 @@
 package chapter02.ex1;
+import chapter09.ex1.A;
 
-public class UsageofDataType {
+public class UsageofDataType extends A{
 
 	public static void main(String[] args) {
+		
+		UsageofDataType a1 = new UsageofDataType();
+		
+		a1.bcd();
 		
 		//변수 선언 및 값 대입을 위한 두 가지 방법
 		

@@ -1,5 +1,6 @@
 package chapter07;
 
+
 class Calc{
 	
 	//두 정수의 값을 받아서 더해서 값을 던져줌
@@ -43,5 +44,8 @@ public class Ex01 {
 		System.out.println(cal.mul(40, 50));
 		System.out.printf("%.5f\n",cal.div(100, 55));
 		System.out.printf("%.5f",cal.rec(20, 68.8));
+		
+
+		
 	}
 }
