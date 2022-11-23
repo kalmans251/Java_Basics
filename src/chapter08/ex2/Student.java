@@ -1,5 +1,7 @@
 package chapter08.ex2;
 
+
+
 public class Student { //public : 필드, 메소드 이름앞에 다른 패키지에서 사용하려면
 
 		//필드선언

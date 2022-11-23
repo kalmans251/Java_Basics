@@ -24,6 +24,9 @@ public class Instance_VS_Static02 {
 		c1.a = 100;             //b는 Static 필드로 인스턴스생성으로 새로운 객체를 여러개로 만든다 해도 같은 주소를 참조하여 모두 연결되어있다. 
 		c1.b = 777;						//     즉 static 필드는 모든 인스턴스가 공유한다. 
 		
+									// 메모리의 클래스 영역에 변수의 값을 저장 , Heap 영역에는 
+									// 클래스 영역의 저장된 주소 값만 가진다.   
+		
 		System.out.println(c1.a);
 		System.out.println(c1.b);
 		c1.print1();
