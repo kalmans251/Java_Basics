@@ -58,8 +58,8 @@ public class Object_Method2 {
 
 		Bb b1 = new Bb("안녕");
 		Bb b2 = new Bb("안녕");
-		System.out.println(b1 == b2);	//Stack 참조주소 비교 , false
-		System.out.println(b1.equals(b2));  // Heap, name 필드의 값을 참조비교.
+		System.out.println(b1 == b2); // Stack 참조주소 비교 , false
+		System.out.println(b1.equals(b2)); // Heap, name 필드의 값을 참조비교.
 	}
 
 }
