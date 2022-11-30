@@ -31,10 +31,10 @@ public class Ex01 {
 		System.out.println("======================================================");
 		
 		try {
-			System.out.println(3/0);
-			
+			System.out.println(3/1);
+
 			int[] arr1 = new int[] {1,2,3};
-			System.out.println(arr1[5]);
+			System.out.println(arr1[2]);
 			
 			int num1 = Integer.parseInt("34A");
 			System.out.println(num1);
@@ -42,9 +42,43 @@ public class Ex01 {
 			System.out.println("0으로 나눌수 없습니다");
 			System.out.println("어레이 인덱스값을 초과했습니다.");
 			System.out.println("문자를 숫자로 바꿀수 없습니다");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
 		}finally {
 			System.out.println("하나의 catch블락에 3개의 Exception 조건, 출력 방법2.");
 		}
+		
+		
+		
+		System.out.println("===========3. 각각의 try 블락에서 처리 =========================");
+		
+		
+		
+		try {
+			System.out.println(3/0);
+		} catch (ArithmeticException e) {
+			System.out.println("0으로 나눌수 없습니다");
+		}
+		
+		
+		
+		try {
+			int[] arr = new int[] {1,2,3};
+			System.out.println(arr[5]);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("어레이 인덱스값을 초과했습니다.");
+		}
+		
+		
+		
+		try {
+			int num = Integer.parseInt("34A");
+			System.out.println(num);
+		} catch (NumberFormatException e) {
+			System.out.println("문자를 숫자로 바꿀수 없습니다");
+		}
+		
+		
 		
 	}
 
