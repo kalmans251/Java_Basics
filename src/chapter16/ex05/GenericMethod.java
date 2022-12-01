@@ -26,8 +26,11 @@ public class GenericMethod {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		GenericMethods gm = new GenericMethods();
+		
 		String a = gm.<String>method1("안녕");
 		System.out.println(a);
+		
+		
 	}
 
 }
