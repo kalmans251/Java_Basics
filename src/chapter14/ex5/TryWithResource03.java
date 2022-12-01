@@ -51,6 +51,7 @@ public class TryWithResource03 {
 				}				
 			}
 		}
+		
 		System.out.println(a1.resource);
 		
 		System.out.println("============2. 자동으로 객체 리소스 제거 ==============");
