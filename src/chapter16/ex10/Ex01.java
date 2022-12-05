@@ -1,5 +1,7 @@
 package chapter16.ex10;
 
+import java.util.Scanner;
+
 //제너릭 클래스 / 제너릭 메소드 를 사용해서 두점의 좌표 값으로 넓이를 구하는 프로그램 작성.
 
 //두점의 좌표를 처리하는 클래스 생성. <제너릭 클래스>
@@ -81,10 +83,16 @@ public class Ex01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		double in1 = sc.nextDouble();
+		double in2 = sc.nextDouble();
+		double in3 = sc.nextDouble();
+		double in4 = sc.nextDouble();
 		
 		// 두점의 좌표를 저장하는 p1
-		Point p1 = new Point(   1.   ,    7.    );
-		Point p2 = new Point(   4.5  ,   6.6 );
+		Point p1 = new Point(   in1   ,    in2    );
+		Point p2 = new Point(   in3  ,   in4 );
 		
 		
 		
