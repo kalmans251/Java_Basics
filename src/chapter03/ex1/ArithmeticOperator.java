@@ -68,10 +68,6 @@ public class ArithmeticOperator {
 		System.out.println("===========================");
 		
 		
-		
-		
-		
-		
 	}
 
 }
